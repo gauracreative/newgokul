@@ -669,7 +669,17 @@ div.video-box iframe {
   border: 0;
 }
 div.video-box.vertical {
+  /* Set height based on viewport height minus space for other elements */
   padding-bottom: 177.78%; /* 9:16 aspect ratio (16/9 * 100 = 177.78%) */
+  height: auto;
+  max-height: calc(100vh - 250px); /* Adjust 150px as needed for top navigation, title, etc. */
+  max-width: calc((100vh - 250px) * 9 / 16); /* Maintain aspect ratio within screen height */
+  margin-left: auto;
+  margin-right: auto;
+}
+div.video-box.vertical iframe {
+  width: 100%;
+  height: 100%;
 }
 
 .row {
