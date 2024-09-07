@@ -834,6 +834,7 @@ div.video-box.vertical iframe {
 .slider-navigation {
   text-align: center;
   margin-bottom: 2em;
+  margin-top: 1em;
 }
 .slider-navigation .dot {
   cursor: pointer;
